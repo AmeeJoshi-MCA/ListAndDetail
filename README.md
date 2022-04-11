@@ -36,12 +36,14 @@ This is a clean architecture app example built with
 ## How to build on your environment
 You can open the project in Android studio and press run.
 
-# Screenshots
-| List Screen | Detail
-|:-:|:-:|:-:|
-| ![Fist](screenshots/ItemListLight.png?raw=true) | ![3](screenshots/ItemListDark.png?raw=true)
-| ![3](screenshots/ItemDetailLight.png?raw=true) |
-| Main Screen Dark | Detail Dark
-| ![4](screenshots/ItemDetailDark.png?raw=true)
+<table>
+  <tr>
+    <td>List And Detail Light</td>
+  </tr>
+  <tr>
+    <td><img src="screenshots/ItemListLight.jpg" width=270 height=480></td>
+    <td><img src="screenshots/ItemDetailLight.jpg" width=270 height=480></td>
+  </tr>
+ </table>
 
 Notice: Before running command make sure that your device is up and running.
