@@ -39,9 +39,9 @@ You can open the project in Android studio and press run.
 # Screenshots
 | List Screen | Detail
 |:-:|:-:|:-:|
-| ![Fist](screenshots/ItemListLight.png?raw=true) | ![3](screenshots/ItemListDark.png?raw=true)
-| ![3](screenshots/ItemDetailLight.png?raw=true) |
+| ![Fist](screenshots/ItemListLight.jpg?raw=true) | ![3](screenshots/ItemListDark.jpg?raw=true)
+| ![3](screenshots/ItemDetailLight.jpg?raw=true) |
 | Main Screen Dark | Detail Dark
-| ![4](screenshots/ItemDetailDark.png?raw=true)
+| ![4](screenshots/ItemDetailDark.jpg?raw=true)
 
 Notice: Before running command make sure that your device is up and running.
