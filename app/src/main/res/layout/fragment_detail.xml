@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="productDetail"
+            type="com.myapplication.network.model.Product" />
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.myapplication.ui.itemDetail.ItemsDetailFragment">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/img_item"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/detail_image_size"
+            android:scaleType="centerCrop"
+            android:layout_margin="@dimen/margin_normal"
+            app:imageUrl="@{productDetail.url}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent"
+            tools:src="@tools:sample/backgrounds/scenic" />
+
+        <TextView
+            android:id="@+id/textItemName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_normal"
+            android:textSize="@dimen/text_size_large"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/img_item"
+            android:text="@{productDetail.name}"
+            tools:text="name" />
+
+        <TextView
+            android:id="@+id/textItemPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@{`Price: ` +productDetail.salePrice.amount + ` ` + productDetail.salePrice.currency}"
+            android:textSize="@dimen/text_size_normal"
+            android:layout_marginStart="@dimen/margin_normal"
+            android:layout_marginTop="@dimen/margin_normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textItemName"
+            app:layout_constraintVertical_bias="0.1"
+            tools:text="price" />
+
+        <TextView
+            android:id="@+id/text_desc"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/margin_normal"
+            android:textSize="@dimen/text_size_small"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textItemPrice"
+            android:text="@string/dummy_detail" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

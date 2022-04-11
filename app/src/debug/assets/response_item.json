@@ -1,0 +1,46 @@
+[{
+  "id": "36802",
+  "name": "Food",
+  "description": "",
+  "products": [{
+    "id": "1",
+    "categoryId": "36802",
+    "name": "Bread",
+    "url": "/Bread.jpg",
+    "description": "",
+    "salePrice": {
+      "amount": "0.81",
+      "currency": "EUR"
+    }
+  },{
+    "id": "2",
+    "categoryId": "36802",
+    "name": "Sandwich",
+    "url": "/Sandwich.jpg",
+    "description": "",
+    "salePrice": {
+      "amount": "2.01",
+      "currency": "EUR"
+    }
+  },{
+    "id": "3",
+    "categoryId": "36802",
+    "name": "Milk",
+    "url": "/Milk.jpg",
+    "description": "",
+    "salePrice": {
+      "amount": "2.00",
+      "currency": "EUR"
+    }
+  },{
+    "id": "4",
+    "categoryId": "36802",
+    "name": "Cake",
+    "url": "/Cake.jpg",
+    "description": "",
+    "salePrice": {
+      "amount": "0.01",
+      "currency": "EUR"
+    }
+  }]
+}]

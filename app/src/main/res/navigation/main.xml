@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    app:startDestination="@id/item_list">
+
+    <fragment
+        android:id="@+id/item_list"
+        android:name="com.myapplication.ui.itemList.ItemListFragment"
+        tools:layout="@layout/fragment_item"
+        android:label="@string/items">
+        <action
+            android:id="@+id/action_albums_list_to_album_details"
+            app:destination="@+id/item_detail"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right">
+            <argument
+                android:name="product"
+                app:argType="com.myapplication.network.model.Product"
+                />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/item_detail"
+        android:name="com.myapplication.ui.itemDetail.ItemDetailFragment"
+        tools:layout="@layout/fragment_detail"
+        android:label="@string/details">
+
+       <argument
+           android:name="product"
+           app:argType="com.myapplication.network.model.Product"/>
+        </fragment>
+
+</navigation>
+

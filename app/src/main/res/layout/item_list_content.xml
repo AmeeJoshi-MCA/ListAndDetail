@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="data"
+            type="com.myapplication.network.model.Product" />
+
+        <variable
+            name="clickListener"
+            type="com.myapplication.ui.itemList.ClickListener" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_normal"
+        android:layout_marginVertical="@dimen/margin_small"
+        android:padding="@dimen/margin_small"
+        app:cardCornerRadius="@dimen/common_radius"
+        app:cardElevation="@dimen/common_elevation"
+        android:onClick="@{() -> clickListener.onClick(data)}">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/img_item"
+                android:layout_width="@dimen/home_image_size"
+                android:layout_height="@dimen/home_image_size"
+                android:layout_margin="@dimen/margin_normal"
+                app:cardCornerRadius="@dimen/common_radius"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/ic_launcher"
+                    app:imageUrl="@{data.url}"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    tools:ignore="ContentDescription" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txt_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_normal"
+                android:maxLines="1"
+                android:textSize="@dimen/text_size_normal"
+                android:textStyle="bold"
+                android:text="@{data.name}"
+                tools:text="@string/items"
+                app:layout_constraintBottom_toTopOf="@+id/txt_descripcion"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/img_item"
+                app:layout_constraintTop_toTopOf="@+id/img_item"
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txt_descripcion"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/margin_normal"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@string/dummy"
+                app:layout_constraintBottom_toBottomOf="@+id/img_item"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/txt_name"
+                app:layout_constraintTop_toBottomOf="@+id/txt_name" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</layout>
