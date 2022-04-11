@@ -56,4 +56,5 @@ You can open the project in Android studio and press run.
  </table>
 
 Notice: 1 I have added dummy description to make UI look good.
+
         2 Before running command make sure that your device is up and running.
