@@ -45,6 +45,14 @@ You can open the project in Android studio and press run.
     <td><img src="screenshots/ItemListLight.jpg" width=270 height=480></td>
     <td><img src="screenshots/ItemDetailLight.jpg" width=270 height=480></td>
   </tr>
+  
+   <tr>
+    <td>List And Detail Dark</td>
+  </tr>
+  <tr>
+    <td><img src="screenshots/ItemListDark.jpg" width=270 height=480></td>
+    <td><img src="screenshots/ItemDetailDark.jpg" width=270 height=480></td>
+  </tr>
  </table>
 
 Notice: Before running command make sure that your device is up and running.
