@@ -36,6 +36,7 @@ This is a clean architecture app example built with
 ## How to build on your environment
 You can open the project in Android studio and press run.
 
+# Screenshots
 <table>
   <tr>
     <td>List And Detail Light</td>
@@ -44,6 +45,16 @@ You can open the project in Android studio and press run.
     <td><img src="screenshots/ItemListLight.jpg" width=270 height=480></td>
     <td><img src="screenshots/ItemDetailLight.jpg" width=270 height=480></td>
   </tr>
+  
+   <tr>
+    <td>List And Detail Dark</td>
+  </tr>
+  <tr>
+    <td><img src="screenshots/ItemListDark.jpg" width=270 height=480></td>
+    <td><img src="screenshots/ItemDetailDark.jpg" width=270 height=480></td>
+  </tr>
  </table>
 
-Notice: Before running command make sure that your device is up and running.
+Notice: 1 I have added dummy description to make UI look good.
+
+        2 Before running command make sure that your device is up and running.
