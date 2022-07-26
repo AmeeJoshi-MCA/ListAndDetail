@@ -36,6 +36,10 @@ android {
         debug {
             applicationIdSuffix ".debug"
             testCoverageEnabled true
+
+            firebaseAppDistribution {
+                groups= "Test"
+            }
         }
     }
     compileOptions {
