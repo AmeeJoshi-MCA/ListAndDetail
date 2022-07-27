@@ -18,7 +18,7 @@ jobs:
       - name: build debug
         run: ./gradlew assembleDevDebug
       - name: Upload artifact to Firebase App Distribution
-        uses: wzieba/Firebase-Distribution-Github-Action@v1
+        uses: AmeeJoshi-MCA/ListAndDetail
         with:
           appId: ${{secrets.FIREBASE_ID}}
           token: ${{secrets.FIREBASE_TOKEN}}
