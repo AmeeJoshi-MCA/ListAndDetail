@@ -36,9 +36,23 @@ android {
         debug {
             applicationIdSuffix ".debug"
             testCoverageEnabled true
+        }
+    }
 
+    flavorDimensions "version"
+    productFlavors {
+        demo {
+            dimension "version"
             firebaseAppDistribution {
-                groups= "Test"
+                releaseNotes="Release notes for demo version"
+                testers="ameejoshi.mca2012@gmail.com"
+            }
+        }
+        full {
+            dimension "version"
+            firebaseAppDistribution {
+                releaseNotes="Release notes for demo version"
+                testers="ameejoshi.mca2012@gmail.com"
             }
         }
     }
